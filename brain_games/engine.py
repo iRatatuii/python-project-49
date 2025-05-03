@@ -11,7 +11,7 @@ def run_game(game_description, generate_round):
     print(game_rules)
     rounds_to_win = 3
     
-    for i in range(rounds_to_win):
+    for _ in range(rounds_to_win):
         question, correct_answer = generate_round()
         print(f'Question: {question}')
         user_answer = string('Your answer: ')
@@ -24,6 +24,7 @@ def run_game(game_description, generate_round):
                       )
             print(result)
             print(f"Let's try again, {user_name}!")
+            return
     else:
         print(f'Congratulations, {user_name}!')
 
