@@ -1,6 +1,9 @@
 install:
 	uv sync
 
+update:
+	uv tool install --force dist/hexlet_code-0.1.0.tar.gz
+
 brain-games:
 	uv run brain-games
 
