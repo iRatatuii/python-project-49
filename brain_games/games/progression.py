@@ -22,5 +22,5 @@ def get_description():
 
 
 def generate_round():
-    answer, question = hide_one_number_in_progression(get_progression())
-    return answer, question
+    question, answer = hide_one_number_in_progression(get_progression())
+    return question, str(answer)
