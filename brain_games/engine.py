@@ -27,8 +27,3 @@ def run_game(game_description, generate_round):
             return
     else:
         print(f'Congratulations, {user_name}!')
-
-
-if __name__ == '__main__':
-    
-    run_game()
