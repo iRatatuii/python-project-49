@@ -1,6 +1,7 @@
-from brain_games.engine import run_game
-from random import choice, randint
 from operator import add, mul, sub
+from random import choice, randint
+
+from brain_games.engine import run_game
 
 
 def get_description():
@@ -23,5 +24,7 @@ def generate_round():
 
     return question, str(correct_answer)
 
+
 def main():
+    
     run_game(get_description(), generate_round)
