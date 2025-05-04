@@ -1,5 +1,6 @@
 from brain_games.engine import run_game
-from brain_games.games.calc import get_description, generate_round
+from brain_games.games.calc import generate_round, get_description
+
 
 def main():
     
