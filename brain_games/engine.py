@@ -25,5 +25,5 @@ def run_game(game_description, generate_round):
             print(result)
             print(f"Let's try again, {user_name}!")
             return
-    else:
-        print(f'Congratulations, {user_name}!')
+
+    print(f'Congratulations, {user_name}!')
