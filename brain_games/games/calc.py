@@ -1,8 +1,6 @@
 from operator import add, mul, sub
 from random import choice, randint
 
-from brain_games.engine import run_game
-
 
 def get_description():
     return 'What is the result of the expression?'
@@ -23,8 +21,3 @@ def generate_round():
     correct_answer = operations[operator](num1, num2)
 
     return question, str(correct_answer)
-
-
-def main():
-    
-    run_game(get_description(), generate_round)
