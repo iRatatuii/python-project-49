@@ -10,7 +10,7 @@ def get_progression():
 
 
 def hide_one_number_in_progression(progression):
-    hide_index = randint(0, 9)
+    hide_index = randint(1, 8)
     new_progression = progression[:]
     answer = new_progression[hide_index]
     new_progression[hide_index] = '..'
